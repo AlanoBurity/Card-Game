@@ -19,7 +19,7 @@ class Form extends React.Component {
     return (
       <div>
         <h1>Adicionar nova carta</h1>
-        <form className="form">
+        <form className="form" onSubmit={ onSaveButtonClick }>
           <label htmlFor="nome">
             Nome
             <input
@@ -76,7 +76,7 @@ class Form extends React.Component {
               onChange={ onInputChange }
               name="cardAttr3"
               max="90"
-              min="0"
+              min="0 "
             />
           </label>
           <br />
