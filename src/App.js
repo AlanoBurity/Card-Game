@@ -16,13 +16,11 @@ class App extends React.Component {
       cardRare: '',
       cardTrunfo: '',
       hasTrunfo: '',
-      isSaveButtonDisabled: 'true',
-      onSaveButtonClick: '',
       cards: [],
     };
   }
 
-  handleCheckTrunfo() {
+  handleTrunfo() {
     const { cards } = this.state;
     return cards.some(({ cardTrunfo }) => cardTrunfo === true);
   }
@@ -128,7 +126,7 @@ class App extends React.Component {
           cardImage={ cardImage }
           cardRare={ cardRare }
           cardTrunfo={ cardTrunfo }
-          hasTrunfo={ this.handleCheckTrunfo() }
+          hasTrunfo={ this.handleTrunfo() }
           isSaveButtonDisabled={ this.isSaveButtonDisabled() }
           onSaveButtonClick={ this.onSaveButtonClick }
         />
