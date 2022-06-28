@@ -99,7 +99,6 @@ class App extends React.Component {
       cardAttr3: 0,
       cardRare: 'normal',
       cardTrunfo: false,
-      /*  hasTrunfo: false, */
       cards: [newCard, ...preState.cards],
     }));
   };
@@ -115,9 +114,7 @@ class App extends React.Component {
       cardRare,
       cardTrunfo,
       hasTrunfo,
-      cards,
-      isSaveButtonDisabled,
-      onSaveButtonClick } = this.state;
+      cards } = this.state;
     return (
       <div>
         <h1>Tryunfo</h1>
